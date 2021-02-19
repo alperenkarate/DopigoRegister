@@ -1,0 +1,205 @@
+body {
+  background-color: #e7e7ec;
+  /* height: 100vh; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.registerCardContainer {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6%;
+  padding-bottom: 20px;
+}
+.registerTabs {
+  height: 100vh;
+  align-items: center;
+}
+.tabs {
+  -webkit-box-shadow: 0px 0px 33px -1px rgba(163, 163, 163, 0.41);
+  -moz-box-shadow: 0px 0px 33px -1px rgba(163, 163, 163, 0.41);
+  box-shadow: 0px 0px 33px -1px rgba(163, 163, 163, 0.41);
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  height: 100%;
+}
+#tabs {
+  position: relative;
+}
+#tabs fieldset {
+  position: relative;
+  height: 100%;
+}
+#tabs fieldset:not(:first-of-type) {
+  /*hide all except first fieldset*/
+  display: none;
+}
+.leftCard {
+  display: flex;
+  border-right: 1px solid rgba(202, 202, 202, 0.377);
+  align-items: center;
+}
+.leftCard .leftContent {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 180px;
+}
+.leftCard .leftContent h6 {
+  color: #615f66;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.leftCard .leftContent p {
+  color: #a09ea5;
+  justify-content: center;
+  margin: 0 15px;
+  text-align: center;
+  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
+}
+.tabNumbers {
+  padding-bottom: 60px;
+}
+.numberCircle {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 13px;
+  background: #ebebef;
+  color: gray;
+  text-align: center;
+  font: 18px Arial, sans-serif;
+  margin: 0 6px;
+}
+
+.numberCircle.active {
+  background: #6a5b95;
+  color: white;
+  text-align: center;
+  font: 16px Arial, sans-serif;
+}
+
+/* rigthSection */
+.rightCard {
+  height: 100%;
+  padding-top: 6%;
+  padding-left: 25px;
+}
+.rightCard .StepCount {
+  margin-left: auto;
+  font-weight: 600;
+}
+
+.inputContainer {
+  display: inline-grid;
+  text-align: left;
+  margin-top: 25px;
+  color: #615f66;
+}
+
+.inputContainer span {
+  padding-bottom: 5px;
+  color: #666568;
+}
+.inputContainer input {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid lightgray;
+  height: 35px;
+  line-height: 32px;
+  padding-left: 15px;
+}
+
+.inputContainer input.error {
+  border: 0.5px solid rgba(245, 127, 0, 1);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(245, 127, 0, 0.171);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(245, 127, 0.171);
+  box-shadow: 0px 0px 2px 0px rgba(245, 127, 0.171);
+}
+
+.inputContainer input::placeholder {
+  font-size: 14px;
+  padding-left: 15px;
+  color: #a09ea5;
+}
+.myBTN {
+  padding: 10px 30px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 44px;
+  float: left;
+  margin-top: 75px;
+  transition: 0.3s all ease;
+}
+.nextBTN {
+  background: #6a5b95;
+  color: white;
+}
+.nextBTN:hover {
+  background-color: #8778af;
+}
+.confirmBTN {
+  background: #6a5b95;
+  color: white;
+}
+.confirmBTN:hover {
+  background-color: #8778af;
+}
+.backBTN {
+  background-color: white;
+  border: 1px solid lightgray;
+  color: gray;
+  padding: 10px 20px;
+  margin-right: 13px;
+}
+.backBTN i {
+  font-size: 14px;
+}
+.backBTN:hover {
+  background-color: lightgray;
+  color: black;
+}
+.myBTN:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .padding-right-lg {
+    padding-right: 120px;
+  }
+  .tabs {
+    height: calc(100vh - 40px);
+    max-height: 762px;
+  }
+  .registerCardContainer {
+    margin: 0 9%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tabNumbers {
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .leftCard .leftContent h6 {
+    font-size: 17px;
+  }
+  .leftCard .leftContent p {
+    font-size: 15px;
+  }
+  .leftCard {
+    border-right: none;
+  }
+}

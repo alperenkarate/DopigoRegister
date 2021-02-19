@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="register.css">
+    <title>Dopigo - Register</title>
+</head>
+
+<body>
+
+    <div class="container-fluid registerCardContainer">
+
+        <form id="registForm" action="#" name="registration">
+            <div id="tabs" class="tabs">
+
+                <!--Register section 1-->
+                <fieldset>
+                    <div class="row w-100 h-100 align-items-center">
+                        <div class="col-sm-4 leftCard h-100">
+                            <div class="leftContent">
+                                <div class="tabNumbers d-flex justify-content-center">
+                                    <span class=" numberCircle active">1</span>
+                                    <span class="numberCircle">2</span>
+                                </div>
+                                <h6>Give us some basic information</h6>
+                                <p>To start off. Please enter main contact name, email
+                                    address and password
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 rightCard">
+                            <div class="container padding-right-lg">
+                                <div class="row StepCount">
+                                    <span>Step 1</span>
+                                </div>
+                                <div class="row inputField">
+                                    <div class="col-lg-6 inputContainer">
+                                        <span class="inputName">Main Contact Name</span>
+                                        <input id="name" name="name" type="text" required
+                                            data-msg="Please fill this field" placeholder="eg. Jonhsmith">
+                                    </div>
+                                    <div class="col-lg-6 inputContainer">
+                                        <span class="inputName">Email Address</span>
+                                        <input id="email" name="email" type="email"
+                                            placeholder="eg. Johnsmith@mybusiness.com">
+                                    </div>
+                                    <div class="col-lg-6 inputContainer">
+                                        <span class="inputName">Password</span>
+                                        <input id="pw" name="pw" required type="password"
+                                            placeholder="Password must be at least 8 characters">
+                                    </div>
+                                    <div class="col-lg-6 inputContainer">
+                                        <span class="inputName d-none d-lg-inline invisible"> Confirm Password</span>
+                                        <input id="pwC" required name="pwC" type="password"
+                                            placeholder="Confirm Password">
+                                    </div>
+                                </div>
+                                <button type="button" class="next myBTN nextBTN">Continue</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <!--Register section 1-->
+
+                <!--Register section 2-->
+                <fieldset>
+                    <div class="row w-100 h-100 align-items-center">
+                        <div class="col-sm-4 leftCard h-100 ">
+                            <div class="leftContent">
+                                <div class="tabNumbers d-flex justify-content-center">
+                                    <span class=" numberCircle active">1</span>
+                                    <span class="numberCircle active">2</span>
+                                </div>
+                                <h6>Complete your registration</h6>
+                                <p>Please enter business details.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 rightCard">
+                            <div class="container padding-right-lg">
+                                <div class="row StepCount">
+                                    <span>Step 2</span>
+                                </div>
+                                <div class="row inputField">
+                                    <div class="col-12 inputContainer">
+                                        <span class="inputName">Business Name (English)</span>
+                                        <input required name="businessName" type="text" placeholder="eg. mybusiness">
+                                    </div>
+                                    <div class="col-lg-6 inputContainer">
+                                        <span class="inputName">Business Website</span>
+                                        <input type="text" placeholder="eg. mybusiness.com">
+                                    </div>
+                                    <div class="col-lg-6 inputContainer">
+                                        <span class="inputName">Main Phone Number</span>
+                                        <input required name="phone" type="tel" placeholder="eg. 658 0000 0000">
+                                    </div>
+                                    <div class="col-lg-6 inputContainer">
+                                        <label for="exampleFormControlSelect1">Example select</label>
+                                        <select name="businessType" class="form-control" id="exampleFormControlSelect1">
+                                            <option selected disabled>Please select</option>
+                                            <option>Sole proprietorship</option>
+                                            <option>General partnership</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 inputContainer">
+                                        <span class="inputName">Business Registration Number</span>
+                                        <input required name="businessRegistNo" placeholder="eg. 658 0000 0000">
+                                    </div>
+                                    <div class="col-12 inputContainer">
+                                        <span class="inputName">Business Address (English)</span>
+                                        <input type="text" placeholder="eg. mybusiness">
+                                    </div>
+                                </div>
+                                <button class="myBTN backBTN"> <i class="fas fa-angle-left"></i> Back</button>
+                                <button type="submit" class="myBTN confirmBTN">Confirm</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <!--Register section 2-->
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+        integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
+        crossorigin="anonymous"></script>
+    <script src="register.js"></script>
+</body>
+
+</html>
