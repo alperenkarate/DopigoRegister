@@ -1,6 +1,5 @@
 body {
   background-color: #e7e7ec;
-  /* height: 100vh; */
   text-align: center;
   display: flex;
   align-items: center;
@@ -40,6 +39,9 @@ body {
   /*hide all except first fieldset*/
   display: none;
 }
+
+/*#region left */
+
 .leftCard {
   display: flex;
   border-right: 1px solid rgba(202, 202, 202, 0.377);
@@ -87,8 +89,9 @@ body {
   text-align: center;
   font: 16px Arial, sans-serif;
 }
+/*#endregion*/
 
-/* rigthSection */
+/*#region rigthSection */
 .rightCard {
   height: 100%;
   padding-top: 6%;
@@ -172,6 +175,9 @@ body {
 .myBTN:focus {
   outline: none;
 }
+/*#endregion*/
+
+/*#region Responsive breakpoints */
 
 @media only screen and (min-width: 992px) {
   .padding-right-lg {
@@ -203,3 +209,5 @@ body {
     border-right: none;
   }
 }
+
+/*#endregion */
