@@ -9,8 +9,8 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding-top: 6%;
-  padding-bottom: 20px;
+  /* padding-top: 6%;
+  padding-bottom: 20px; */
 }
 .registerTabs {
   height: 100vh;
@@ -193,6 +193,14 @@ body {
 }
 .myBTN:focus {
   outline: none;
+}
+/*#endregion*/
+
+/*#region confirmedSection*/
+.confirmedCol {
+  display: inline-grid;
+  align-items: center;
+  padding-top: 0;
 }
 /*#endregion*/
 
