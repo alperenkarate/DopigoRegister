@@ -208,6 +208,9 @@ body {
   .leftCard {
     border-right: none;
   }
+  fieldset .row {
+    margin-left: 0;
+  }
 }
 
 /*#endregion */
