@@ -96,10 +96,29 @@ body {
   height: 100%;
   padding-top: 6%;
   padding-left: 25px;
+  min-height: 322px;
 }
 .rightCard .StepCount {
   margin-left: auto;
   font-weight: 600;
+}
+.rightCard .confirmedText {
+  color: #615f66;
+}
+
+.rightCard .confirmedContainer {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.rightCard .confirmedText {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
 }
 
 .inputContainer {

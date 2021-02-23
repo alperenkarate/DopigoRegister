@@ -52,7 +52,7 @@ var $current_fs, $next_fs, $previous_fs;
 
 $(".nextBTN").click(function(event){ //next step
     if (!$("#registForm").valid()) {
-        return;
+        // return;
     }
     event.preventDefault();
 	$current_fs = $(this).parent().closest("fieldset");
