@@ -9,8 +9,8 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  /* padding-top: 6%;
-  padding-bottom: 20px; */
+  padding-top: 5%;
+  padding-bottom: 20px;
 }
 .registerTabs {
   height: 100vh;
